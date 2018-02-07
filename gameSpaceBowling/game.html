@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Bowling</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="game.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<div id="game">
+		<div id="gameUI">
+			<div id="gameIntro">
+				<h1>Space bowling</h1>
+				<p>This is an awesome game</p>
+				<p><a id="gamePlay" class="button" href="">Play</a></p>
+			</div>
+			<div id="gameStats">
+				<p>Asteroids: <span id="ganeRemaining"></span></p>
+				<p>Clicks: <span class="gameScore"></span></p>
+				<p><a class="gameReset" href="">Reset</a></p>
+			</div>
+			<div id="gameComplete">
+				<h1>You win!</h1>
+				<p>Congratulations, you completed the game in <span class="gameScore"></span> clicks.</p>
+				<p><a href="" class="gameReset button">Play again</a></p>
+			</div>
+			
+			
+		</div>
+		<canvas id="gameCanvas" width="350" height="600">
+			<!--在此插入后备内容-->
+		</canvas>
+	</div>
+</body>
+</html>
